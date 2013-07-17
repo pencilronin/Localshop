@@ -1,6 +1,18 @@
+
+/*beginning of the container*/
+ 
 body{ 
 	width:1024px;
-	margin:0;
+	height:auto;
+	margin:auto;
+	background-color: black;  
+}
+
+#container{
+	height:auto;
+	overflow:hidden;
+	background-color: #ffffff;
+	
 }
 
 /* header */
@@ -20,6 +32,7 @@ body{
 	margin-top:100px;
 	margin-left:-30px;
 	height:360px;
+	width: 201px;
 }	
 a {
 	text-decoration: none;
@@ -42,33 +55,38 @@ li{
 	text-align: center;
 }
 /* contact button */
-#contact img.resize {
-	width:150px;
-}
 
 #contact{
-	border:0px;
-	background-color: white;
-}
-
-/*bigmama*/
-#bigmama img{
-	float:right;
-	width:925px;
-	height:1271px;
-	margin-top:0;
 	position:relative;
-	top:-490px;
-	left:90px;
-	transform: rotate(5deg);
-	
-}
-#speechbubble img {
-	float:right;
-	position:absolute;
-	left:220px;
-	top:330px;
-	z-index: -1;
-	
+	width:105px;
+
 }
 
+#bigmama img {
+    float: left;
+    margin-left: 350px;
+    margin-top: -760px;
+    position: relative;
+
+}
+
+/* speechbubble */
+#speechbubble img {
+    float: right;
+    left: -580px;
+    position: relative;
+    top: -500px;
+    z-index: 1;
+}
+
+/* media queries */
+
+@media (max-width:420px){
+	
+	.navigation{
+		width: 40%;
+		height:20%;
+	}
+	#speechbubble img {display:none;}
+	#bigmama img {display:none;}
+}
